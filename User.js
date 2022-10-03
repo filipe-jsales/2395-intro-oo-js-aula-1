@@ -30,6 +30,18 @@ export default class User{
     set nome(nome){
         this.#nome = nome;
     }
+    set email(email){
+        this.#email = email;
+    }
+    set ativo(ativo){
+        this.#ativo = ativo;
+    }
+    set role(role){
+        this.#role = role;
+    }
+    set nascimento(nascimento){
+        this.#nascimento = nascimento;
+    }
 
     #montaObjUser(){
         return({
@@ -42,8 +54,7 @@ export default class User{
     }
 
     exibirInfos(){
-        const objUser = this.#montaObjUser();
-        return `${objUser.nome}, ${objUser.email}, ${objUser.nascimento}, ${objUser.ativo}, ${objUser.role}`
+        return `${this.nome}, ${this.email}, ${this.nascimento}, ${this.ativo}, ${this.role}`
     }
 }
 
