@@ -17,8 +17,3 @@ const admin ={
         console.log('curso criado');
     }
 }
-
-
-Object.setPrototypeOf(admin, user)
-admin.criarCurso()
-admin.exibirInfos()
